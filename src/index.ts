@@ -1,4 +1,7 @@
+/* eslint-disable no-new */
 import { Header } from './components/header';
-
+import { Main } from './components/main';
 // eslint-disable-next-line no-new
-new Header('#app', 'My Series');
+new Header('.container', 'My Series');
+
+new Main('.container');

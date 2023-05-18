@@ -1,12 +1,11 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-useless-constructor */
 export abstract class Component {
   template!: string;
   element!: Element;
-  // eslint-disable-next-line no-useless-constructor, no-unused-vars
-  constructor(public selector: string) {
-    //
-  }
+  constructor(public selector: string) {}
 
-  // eslint-disable-next-line no-undef
   render(position: InsertPosition = 'beforeend') {
     const parentElement = document.querySelector(this.selector);
     if (!parentElement) throw new Error('Invalid selector');
